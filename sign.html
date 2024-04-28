@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./css/img/favicon3-2.png" type="image/x-icon">
+    <title>API Alchemy</title>
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!-- Estilos de Toastify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/sign.css"> <!-- Estilos personalizados para la página de registro/inicio de sesión -->
+
+    <!-- Script para la página de registro/inicio de sesión -->
+    <script type="module" src="./src/sign.js"></script>
+</head>
+<body>
+    <!-- Enlace para volver -->
+    <a href="./" class="return-link">Volver</a>
+
+    <!-- Contenedor principal -->
+    <div class="container" id="container">
+        <!-- Formulario de registro -->
+        <div class="form-container sign-up">
+            <form id="sign-up-form">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <!-- Iconos de inicio de sesión con redes sociales -->
+                    <a href="#" class="icon" id="google-up">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <!-- Otros iconos (comentados por estar deshabilitados) -->
+                    <!--<a href="#" class="icon" id="facebook-up">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>-->
+                    <a href="#" class="icon" id="github-up">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <span>or use your email for registration</span>
+                <!-- Campos del formulario -->
+                <input type="text" placeholder="Name" name="sign-up-name" maxlength="35">
+                <input type="email" placeholder="Email" name="sign-up-email">
+                <input type="password" placeholder="Password" name="sign-up-password">
+                <button>Sign Up</button> <!-- Botón para crear una cuenta -->
+            </form>
+        </div>
+
+        <!-- Formulario de inicio de sesión -->
+        <div class="form-container sign-in">
+            <form id="log-in-form">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <!-- Iconos de inicio de sesión con redes sociales -->
+                    <a href="#" class="icon" id="google-in">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <!-- Otros iconos (comentados por estar deshabilitados) -->
+                    <!--<a href="#" class="icon" id="facebook-in">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>-->
+                    <a href="#" class="icon" id="github-in">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon" id="log-out"></a> <!-- Icono para cerrar sesión -->
+                </div>
+                <span>or use your email password</span>
+                <!-- Campos del formulario -->
+                <input type="email" placeholder="Email" name="log-in-email">
+                <input type="password" placeholder="Password" name="log-in-password">
+                <a id="update-password" href="#">Forget Your Password?</a>
+                <button>Sign In</button> <!-- Botón para iniciar sesión -->
+            </form>
+        </div>
+
+        <!-- Panel de alternancia entre registro e inicio de sesión -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all site features</p>
+                    <button class="hidden" id="login">Sign In</button> <!-- Botón oculto para iniciar sesión -->
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all site features</p>
+                    <button class="hidden" id="register">Sign Up</button> <!-- Botón oculto para crear una cuenta -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Toastify para notificaciones -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
