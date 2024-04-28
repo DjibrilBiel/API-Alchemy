@@ -7,7 +7,7 @@ Convierte ideas en realidad: Tu API personalizada, nuestro compromiso.
 
 ## Utilización de API Alchemy
 
-**Opciones de Uso**
+### Opciones de Uso
 
 Para utilizar la API Alchemy, tienes dos opciones:
 
@@ -17,7 +17,7 @@ Para utilizar la API Alchemy, tienes dos opciones:
 2. **Uso Personalizado:**
    Si prefieres personalizar tu propia API Alchemy, sigue los siguientes pasos:
 
-**Pasos para la Personalización**
+### Pasos para la Personalización
 
 1. **Descarga de la Aplicación:**
    Descarga la aplicación desde el repositorio en GitHub y actualiza los parámetros de configuración con una nueva cuenta en Firebase para su propio uso, modificación, gestión y/o testeo.
