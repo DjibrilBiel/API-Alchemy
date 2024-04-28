@@ -5,9 +5,7 @@ Convierte ideas en realidad: Tu API personalizada, nuestro compromiso.
 ---
 
 
-**Utilización de API Alchemy**
-
----
+## Utilización de API Alchemy
 
 **Opciones de Uso**
 
@@ -42,7 +40,7 @@ Para utilizar la API Alchemy, tienes dos opciones:
        Una vez que se haya creado tu proyecto, serás redirigido al panel de Firebase para ese proyecto en particular. Aquí es donde puedes acceder a todas las herramientas y servicios de Firebase para tu proyecto.
 
 3. **Configuración de la Aplicación con Firebase:**
-   Accede a los archivos previamente descargados y busca el archivo ubicado en .../src/app/firebase. Este archivo se encarga de sincronizar la aplicación con Firebase. Deberás rellenar los campos vacíos con la configuración propia del proyecto anteriormente creado en Firebase.
+   Accede a los archivos previamente descargados y busca el archivo ubicado en *.../src/app/firebase*. Este archivo se encarga de sincronizar la aplicación con Firebase. Deberás rellenar los campos vacíos con la configuración propia del proyecto anteriormente creado en Firebase.
 
 4. **Personalización y Ampliación:**
    Una vez completados estos pasos, podrás modificar la aplicación según tus necesidades y añadir nuevas herramientas desde Firebase a tu API Alchemy personalizada.
