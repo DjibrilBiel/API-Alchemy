@@ -1,5 +1,5 @@
 // Importa proveedores de autenticación y funciones relacionadas con Firebase
-import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 import { auth } from '../firebase.js'; // Importa el objeto 'auth' desde el archivo firebase.js
 import { showMessage } from "../showMessage.js"; // Importa la función 'showMessage' desde el archivo showMessage.js
 

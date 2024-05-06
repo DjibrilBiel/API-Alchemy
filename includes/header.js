@@ -16,7 +16,7 @@ document.querySelector('header').innerHTML = `
         <!-- Enlaces y botones de acción -->
         <ul class="links">
             <li class="logged-out"><a href="sign.html" class="action_btn">Get Started</a></li>
-            <li class="logged-in"><a href="sign.html" class="account">
+            <li class="logged-in"><a href="cuenta.html" class="account">
                 <div class="action_btn nAccount" id="nAccountNav"></div>
                 <div id="iAccountNav"></div>
             </a></li>
@@ -31,7 +31,7 @@ document.querySelector('header').innerHTML = `
         <li><a href="./">Home</a></li>
         <li class="logged-in"><a href="./editor.html">Editor de APIs</a></li>
         <li class="logged-out"><a href="sign.html" class="action_btn">Get Started</a></li>
-        <li class="logged-in_block"><a href="sign.html" class="account">
+        <li class="logged-in_block"><a href="cuenta.html" class="account">
             <div class="action_btn nAccount" id="nAccountMenu"></div>
             <div id="iAccountMenu"></div>
         </a></li>

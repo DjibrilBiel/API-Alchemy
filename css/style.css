@@ -1,16 +1,16 @@
 *{
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Helvetica Now';
     color: #fff;
 }
-body{
-    height: 100vh;
-    background-color: #101010;
-    background-image: url('https://i.pinimg.com/originals/05/e6/f0/05e6f0c626d642e5bf55498c581b38be.jpg') ;
-    background-size: cover;
-    background-position: center;
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #101010, #17265c); /* Fondo con degradado */
+    color: #ccc; /* Color de texto gris claro */
 }
 li{
     list-style: none;
@@ -44,6 +44,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* position: fixed; */
 }
 .navbar .logo a{
     font-size: 1.5rem;
@@ -151,22 +152,126 @@ div.action_btn {
     justify-content: center;
 }
 /* HERO */
+/* Establece la altura de la sección del héroe como 100% del alto de la ventana menos 60 píxeles */
 section#hero{
     height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding-left: 10%;
-    padding-right: 10%;
 }
+/* Estilos para el título dentro de la sección del héroe */
 #hero h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+/* Estilos para el encabezado */
+.header {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del encabezado con transparencia */
+    background: linear-gradient(to left, #101010, #17265c);
+    padding: 40px 0;
+    text-align: center;
+}
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: linear-gradient(to left, #101010, #17265c); */
+    /* border: 0.8px solid white; */
+}
+/* Estilos para títulos */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff; /* Color del título blanco */
+}
+/* Estilos para párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Estilos para botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Estilos para botones al pasar el mouse */
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Estilos para la sección de características */
+.features {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del bloque de características con transparencia */
+    background: linear-gradient(to left, #101010, #17265c);
+    padding: 40px 0;
+}
+/* Estilos para el diseño de las características */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Estilos para cada característica */
+.feature {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Estilos para imágenes dentro de las características */
+.feature img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+/* Estilos para títulos de características */
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* Color del título blanco */
+    /* background: linear-gradient(to left, #101010, #17265c); */
+}
+/* Estilos para párrafos de características */
+.feature p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Estilos para la sección de beneficios */
+.benefits {
+    background-color: rgba(249, 249, 249, 0.9); /* Fondo del bloque de beneficios con transparencia */
+    background: linear-gradient(to left, #101010, #17265c);
+    padding: 40px 0;
+}
+/* Estilos para la lista de beneficios */
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+}
+/* Estilos para elementos de la lista de beneficios */
+.benefits-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
+.call-to-action {
+    background-color: rgba(0, 123, 255, 0.9); /* Fondo del bloque de llamada a la acción con transparencia */
+    background: linear-gradient(to left, #101010, #17265c);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff; /* Color del título blanco */
+}
+
+.call-to-action .btn-large {
+    padding: 15px 30px;
+    font-size: 20px;
+}
 
 
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./css/img/favicon3-2.png" type="image/x-icon">
+    <title>API Alchemy</title>
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!-- Estilos de Toastify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/sign.css"> <!-- Estilos personalizados para la página de registro/inicio de sesión -->
+
+    <!-- Script para la página de registro/inicio de sesión -->
+    <script type="module" src="./src/cuenta.js"></script>
+</head>
+<body>
+    <!-- Enlace para volver -->
+    <a href="./" class="return-link">Volver</a>
+
+    <!-- Contenedor principal -->
+    <div class="container" id="container">
+        <!-- Formulario de registro -->
+        <div class="form-container sign-up">
+            <form id="change-pass-form">
+                <h1>Opciones Avanzadas</h1>
+                <br>
+                <span>cambia la contraseña</span>
+                <!-- Campos del formulario -->
+                <input type="password" placeholder="Contraseña Actual" name="actual-pass">
+                <input type="password" placeholder="Nueva Contraseña" name="new-pass">
+                <input type="password" placeholder="Repita la Contraseña" name="repit-pass">
+                <button>Cambiar Contraseña</button> <!-- Botón para crear una cuenta -->
+                <br><br>
+                <button id="log-out">Cerrar Sesión</button>
+            </form>
+        </div>
+
+        <!-- Formulario de inicio de sesión -->
+        <div class="form-container sign-in">
+            <form id="conf-form">
+                <h1>Configuración</h1>
+                <br><br>
+                <span>cambia tu nombre e imagen de perfil</span>
+                <!-- Campos del formulario -->
+                <input type="text" placeholder="Nombre" name="conf-name">
+                <input type="text" placeholder="FotoURL" name="conf-img">
+                <button>Confirmar cambios</button> <!-- Botón para iniciar sesión -->
+            </form>
+        </div>
+
+        <!-- Panel de alternancia entre registro e inicio de sesión -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Cambia tus Datos</h1>
+                    <p>Cambia tu nombre y foto de perfil</p>
+                    <button class="hidden" id="login">Configuración</button> <!-- Botón oculto para iniciar sesión -->
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <div id="iAccountNav"></div>
+                    <h1 id="nAccountNav"></h1>
+                    <p>Accede a más opciones</p>
+                    <button class="hidden" id="register">Opciones avanzadas</button> <!-- Botón oculto para crear una cuenta -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Toastify para notificaciones -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

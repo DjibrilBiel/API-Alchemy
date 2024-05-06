@@ -1,10 +1,12 @@
 // Importa las funciones necesarias de Firebase Firestore y el objeto 'db' desde el archivo firebase.js
-import { doc, setDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+import { doc, setDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
 import { db } from '../firebase.js';
+
+import { showMessage } from '../showMessage.js'; // Importa la función 'showMessage' desde el archivo showMessage.js
 
 // Take UID
 import { auth } from '../firebase.js';
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 let uid;
 
@@ -30,20 +32,27 @@ function takeUID(a) {
             takeI(element, docData);
         });
 
-        console.log(docData);
         // Establece el documento en Firestore con los datos proporcionados
-        setDoc(doc(db, uid, 'Películas'), docData);
-        console.log("guardado");  
+        try {
+            setDoc(doc(db, uid, 'Películas'), docData)
+            
+            // Muestra un mensaje de éxito en el guardado
+            showMessage("Guardado con éxito", true);
+            // Reinicia la página después de un cierto tiempo (1 segundo)
+            setTimeout(function(){ location.href = "./editor.html" }, 1000);
+        } catch(e) {
+            showMessage("No deje campos vacíos", false);
+        }
     
         function takeI(element, parent) {
-            let i = Number(/-(\d)/.exec(element.id)[1]);
+            let i = Number(/_(\d+)/.exec(element.id)[1]);
 
             if (i == 0)
                 updateDocData(element, parent, 0)
         }
 
         function updateDocData(element, parent, a){
-            let i = Number(/-(\d)/.exec(element.id)[1]);
+            let i = Number(/_(\d+)/.exec(element.id)[1]);
 
             let key = null;
             if (element.querySelector('.key') != null) {
@@ -119,7 +128,6 @@ function takeUID(a) {
                             let newObj = [{}, ''];
                             newObj = updateDocData(nestedElement, newObj[0], 2);
                             parent.value[newObj[1]] = { value: newObj[0].value, type: newObj[0].type };
-                            console.log(newObj[1], newObj[0], parent.value[newObj[1]])
                         });
                         return parent
                     }

@@ -5,11 +5,8 @@ import './app/authentication/signInForm.js';
 // Importa el archivo de lógica para iniciar sesión en aplicaciones
 import './app/authentication/appsLogIn.js';
 
-// Importa el archivo para cerrar sesión
-import './app/authentication/logOut.js';
-
 // Importa el archivo para actualizar la contraseña
-import './app/authentication/updatePassword.js';
+import './app/authentication/sendPasswordReset.js';
 
 // Importa la lógica principal desde index.js
 import './index.js';

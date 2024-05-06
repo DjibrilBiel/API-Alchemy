@@ -35,10 +35,10 @@ export const logInCheck = user => {
         // Inserta el nombre de usuario y la foto de perfil en elementos del DOM
         const insertarNombre = `${nombreUsuario}`;
         const insertarImg = `<img src="${fotoUsuario}" class="d-inline-block align-text-top" id="logo-cuenta">`;
-        document.querySelector('#nAccountNav').innerHTML = insertarNombre;
-        document.querySelector('#iAccountNav').innerHTML = insertarImg;
-        document.querySelector('#nAccountMenu').innerHTML = insertarNombre;
-        document.querySelector('#iAccountMenu').innerHTML = insertarImg;
+        document.querySelector('#nAccountNav').innerHTML += insertarNombre;
+        document.querySelector('#iAccountNav').innerHTML += insertarImg;
+        document.querySelector('#nAccountMenu').innerHTML += insertarNombre;
+        document.querySelector('#iAccountMenu').innerHTML += insertarImg;
     } else {
         // Si el usuario está desconectado, muestra enlaces para usuarios desconectados y oculta enlaces para usuarios conectados
         loggedOutLinks.forEach(link => link.style.display = 'flex');

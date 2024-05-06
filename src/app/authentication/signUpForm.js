@@ -1,5 +1,5 @@
 // Importa las funciones createUserWithEmailAndPassword y updateProfile del módulo firebase-auth.js para registrar nuevos usuarios
-import { createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 import { auth } from '../firebase.js'; // Importa el objeto 'auth' desde el archivo firebase.js
 import { showMessage } from '../showMessage.js'; // Importa la función 'showMessage' desde el archivo showMessage.js
 
@@ -25,7 +25,7 @@ signUpForm.addEventListener('submit', async (e) => {
         // Actualiza el contenido del body con un mensaje de carga
         document.querySelector('body').innerHTML = `
             <h1 id="cargando">CARGANDO...</h1>
-            <style>h1#cargando { color: white; font-size: 7vh }</style>
+            <style>h1#cargando { color: white; font-size: 7vh; font-family: 'Helvetica Now Bold'; }</style>
         `; 
 
         // Muestra un mensaje de bienvenida con el nombre del usuario registrado

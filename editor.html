@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/api_creator.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="./css/img/favicon3-2.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!-- Estilos de Toastify -->
 
     <!-- Script para manipular la selección -->
     <script src="./src/app/firestore_database/changeSelect.js"></script>
@@ -18,20 +20,72 @@
 <body>
     <!-- Encabezado -->
     <header></header>
-
     <!-- Contenedor para edición -->
-    <div class="container-edit">
-        <!-- Botón para guardar -->
-        <button class="save">Save</button>
-        <!-- Estilos adicionales (en línea, aplicados al botón) -->
+    <div class="container">
+        <!-- --SIDECBAR-- -->
+        <nav class="sidebar">
+            <header>
+                <div class="image-text">
+                    <!-- <span class="image">
+                        <img src="logo.jpg" alt="logo">
+                    </span> -->
 
-        <!-- Editor (posiblemente dinámico, pero actualmente vacío) -->
-        <div class="editor"></div>
+                    <div class="text header-text">
+                        <span class="name">Lista de </span>
+                        <span class="profession">Herramientas </span>
+                    </div>
+                </div>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#" id="agregarBoton">
+                                <i class='bx bx-add-to-queue icon'></i>
+                                <span class="text nav-text"><button class="border_boton">Agregar Más</button></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-wind icon'></i>
+                                <span class="text nav-text"><button class="border_boton" id="limpiarBoton">Limpiar</button></span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-dock-right icon '></i>
+                                <span class="text nav-text"><button class="border_boton" id="guardarBoton">Visualizar</button></span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="">
+                        <a class="save" href="#">
+                            <i class='bx bx-save icon'></i>
+                            <span class="text nav-text">Save</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ---TEXTO--- -->
+        <div class="container-edit">
+            <!-- Botón para guardar -->
+            <!-- <button class="save">Save</button> -->
+            <!-- Estilos adicionales (en línea, aplicados al botón) -->
+    
+            <!-- Editor (posiblemente dinámico, pero actualmente vacío) -->
+            <div class="editor"></div>
+        </div>
     </div>
+    
 
     <!-- Scripts adicionales -->
     <script src="./includes/header.js"></script>
     <script src="./css/dropdown_menu.js"></script>
     <script src="./src/database.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!-- Script de Toastify para notificaciones -->
 </body>
 </html>
