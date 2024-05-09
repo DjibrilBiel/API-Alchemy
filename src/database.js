@@ -1,5 +1,6 @@
 // Importa el archivo que contiene la lógica para crear o actualizar documentos en Firestore
 import './app/firestore_database/createOrUpdateDoc.js';
+import './app/firestore_database/download.js';
 
 // Importa el archivo que contiene la lógica para leer documentos en Firestore
 import './app/firestore_database/readDoc.js';
